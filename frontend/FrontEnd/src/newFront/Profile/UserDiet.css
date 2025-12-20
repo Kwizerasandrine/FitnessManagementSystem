@@ -1,0 +1,96 @@
+.user-diet-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-header h2 {
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+}
+
+.diet-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: white;
+}
+
+.diet-card-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 20px;
+}
+
+.diet-card-header h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.diet-card-body {
+    padding: 30px;
+}
+
+.bmi-result-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-left: 5px solid #1e3c72;
+}
+
+.bmi-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e3c72;
+    margin: 10px 0;
+}
+
+.bmi-status.text-success {
+    color: #28a745 !important;
+}
+
+.bmi-status.text-danger {
+    color: #dc3545 !important;
+}
+
+.bmi-status.text-warning {
+    color: #ffc107 !important;
+}
+
+.table thead th {
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+}
+
+.table-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}

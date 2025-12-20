@@ -1,0 +1,187 @@
+.user-diets-page {
+    padding: 20px;
+}
+
+.selected-diet-section {
+    margin-bottom: 40px;
+}
+
+.selected-diet-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.selected-diet-card {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.diet-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.selected-diet-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.selected-diet-card .diet-type {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.diet-macros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.macro {
+    text-align: center;
+}
+
+.macro-label {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-bottom: 4px;
+}
+
+.macro-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.diet-description {
+    margin: 20px 0;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.available-diets-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.diets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.diet-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.diet-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.diet-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diet-header h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.diet-type-badge {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.diet-body {
+    padding: 24px;
+}
+
+.macros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.macro-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.macro-icon {
+    font-size: 24px;
+}
+
+.macro-item .macro-label {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.macro-item .macro-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.diet-card .diet-description {
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.diet-footer {
+    padding: 0 24px 24px;
+}
+
+.diet-footer button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .diet-macros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .macros-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,95 @@
+.alert-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    /* Higher than confirmation modal just in case */
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.alert-modal-content {
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.3s ease-out;
+    overflow: hidden;
+    text-align: center;
+}
+
+.alert-modal-header {
+    padding: 20px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-icon {
+    font-size: 32px;
+}
+
+.alert-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.alert-modal-body {
+    padding: 0 20px 20px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.alert-modal-footer {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+}
+
+/* Type-specific styling accents */
+.alert-modal-content.success .alert-modal-header h3 {
+    color: #2e7d32;
+}
+
+.alert-modal-content.error .alert-modal-header h3 {
+    color: #d32f2f;
+}
+
+.alert-modal-content.info .alert-modal-header h3 {
+    color: #0288d1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

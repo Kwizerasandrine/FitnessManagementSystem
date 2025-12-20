@@ -1,0 +1,150 @@
+.user-trainers-page {
+    padding: 20px;
+}
+
+.selected-trainer-section {
+    margin-bottom: 40px;
+}
+
+.selected-trainer-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.selected-trainer-card {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.trainer-avatar-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 16px;
+}
+
+.selected-trainer-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.trainer-details {
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.trainer-details p {
+    margin: 12px 0;
+    opacity: 0.95;
+}
+
+.available-trainers-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.trainer-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.trainer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-image-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.trainer-avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    border: 4px solid white;
+}
+
+.trainer-info {
+    padding: 24px;
+}
+
+.trainer-info h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.trainer-contact-info p {
+    margin: 10px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trainer-contact-info strong {
+    color: #333;
+}
+
+.trainer-footer {
+    padding: 0 24px 24px;
+}
+
+.trainer-footer button {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .trainers-grid {
+        grid-template-columns: 1fr;
+    }
+}

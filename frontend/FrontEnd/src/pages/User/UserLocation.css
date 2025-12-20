@@ -1,0 +1,83 @@
+.user-location-page {
+    padding: 20px;
+}
+
+.location-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.location-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.location-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.location-selector-container {
+    margin-bottom: 32px;
+}
+
+.location-info {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.info-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.location-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.location-actions button {
+    min-width: 120px;
+}
+
+@media (max-width: 768px) {
+    .location-card {
+        padding: 24px;
+    }
+
+    .location-actions {
+        flex-direction: column;
+    }
+
+    .location-actions button {
+        width: 100%;
+    }
+}
