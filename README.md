@@ -162,11 +162,6 @@ Key API endpoints include:
 - `/api/feedback/*` - Feedback system
 - `/api/inventory/*` - Inventory management
 
-## Work Done By
-
-**Name**: Kwizera Sandrine  
-**ID**: 26104
-
 ## License
 
-This project is developed as part of academic coursework at AUCA (Adventist University of Central Africa).
+This project is developed as part of hands-on project
